@@ -8,8 +8,6 @@ num = 78
 print(lista_numero[0])
 
 #saber qual indice o elemento está armazenado
-
-
 print(lista_numero.index(10))
 
 #exibe do primeiro elemento 0 até o 2
