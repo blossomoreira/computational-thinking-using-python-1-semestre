@@ -1,7 +1,7 @@
 num = [[],[]]
 valor = 0
 
-for cont in range (4):
+for cont in range (10):
     valor = int(input("Digite um numero"))
 
     if valor % 2 == 0:
