@@ -1,16 +1,19 @@
-num = [[],[]]
+'''
+Faça um programa em Python que leia 10 números inteiros e armazene-os
+ em uma lista. Em seguida, armazene os números pares na lista PAR e os 
+números ÍMPARES na lista ímpar. Por fim, imprima as 3 listas.
+'''
+
+lista = [[],[]]
 valor = 0
 
-for cont in range (10):
-    valor = int(input("Digite um numero"))
-
+for i in range (0,10):
+    valor = int(input('Digite os numeros: '))
     if valor % 2 == 0:
-        num[0].append(valor)
+        lista[0].append(valor)
     else:
-        num[1].append(valor)
-print(f"LISTA PAR: {num[0]} e LISTA IMPAR {num[1]}")
-
-
+        lista[1].append(valor)
+print(lista)
 
         
 

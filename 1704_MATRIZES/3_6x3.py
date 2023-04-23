@@ -20,10 +20,14 @@ menor_col = 0
 
 for lin in range (3):
     for col in range (3):
+
         if (matriz[lin][col]>maior_numero):
             maior_numero = matriz[lin][col]
             maior_linha = lin
             maior_col = col
+
+
+            
         if (matriz[lin][col]<menor_numero):
             menor_numero = matriz[lin][col]
             menor_lin = lin

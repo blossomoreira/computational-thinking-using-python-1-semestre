@@ -1,16 +1,21 @@
-qtde_maiorigualsete = 0
+'''
+Faça um programa em Python que peça as 3 notas de 10 alunos, 
+calcule e armazene em uma lista a média de cada aluno. 
+Em seguida, imprima o número de alunos com média maior ou igual a 7.0.
+'''
+
 lista_media = []
+calc = 0
+qtde_notas = 0
 
-for i in range (10):
-    check1 = float(input("a"))
-    check2 = float(input("b"))
-    check3 = float(input("c"))
+for alunos in range (3):
+    nota1 = float(input('Digite a primeira nota: '))
+    nota2 = float(input('Digite a segunda nota: '))
+    nota3 = float(input('Digite a terceira nota: '))
+    calc = (nota1 + nota2 + nota3) / 3
+    lista_media.append(calc)
+print(lista_media)
 
-    media = (check1 + check2 + check3) / 3
-    lista_media.append(media)
-
-for i in range (10):
-    if (lista_media[i] >= 7.0):
-        qtde_maiorigualsete+=1
-
-print(f"fodoes que ganharam 7 {qtde_maiorigualsete}")
+if calc >= 7:
+    qtde_notas+=1
+print(f'um total de {qtde_notas} tiraram mais que 7.0')

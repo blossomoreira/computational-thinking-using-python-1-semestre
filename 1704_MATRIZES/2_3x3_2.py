@@ -1,23 +1,24 @@
+# Faça um programa que leia uma matriz 3x3 de inteiros e
+#multiplique os elementos da diagonal principal da matriz por 
+#um número k.Imprima a matriz na tela antes e depois da multiplicação.
+
 matriz = []
 
-nlin = int(input("Digite o número de linhas da sua matriz"))
-ncol = int(input("Digite o número de colunas da sua matriz"))
-
-for lin in range(0,nlin):
+for lin in range (0,3):
     linha = []
-    for col in range (0,ncol):
-        linha.append(int (input('Digite os elementos de sua matriz')))
+    for col in range (0,3):
+        linha.append(int(input('Digite os elementos da matriz: ')))
     matriz.append(linha)
 
-for lin in range(0,nlin): #imprimindo matriz inteira
+for lin in range (0,3):
     print(matriz[lin])
 
-
 k = int(input('Digite o valor de K'))
-for lin in range (0, nlin):
-    for col in range (0, ncol):
-        if lin == col:
-            matriz[col][lin] = matriz[col][lin] * k
 
-for lin in range(0,nlin): #não esquecer de pegar a mesma linha
+for lin in range(0,3):
+    for col in range(0,3):
+        if lin == col:
+            matriz[lin][col] = matriz[lin][col] * k
+
+for lin in range(0,3):
     print(matriz[lin])
