@@ -6,19 +6,19 @@ matriz = []
 
 for lin in range (0,3):
     linha = []
-    for col in range (0,3):
-        linha.append(int(input('Digite os elementos da matriz: ')))
+    for col in range(0,3):
+        linha.append(int(input('Digite os elementos (9) da matriz 3x3: ')))
     matriz.append(linha)
 
 for lin in range (0,3):
     print(matriz[lin])
 
-k = int(input('Digite o valor de K'))
+k = int(input('Digite o valor de K: '))
 
-for lin in range(0,3):
-    for col in range(0,3):
+for lin in range (0,3):
+    for col in range (0,3):
         if lin == col:
-            matriz[lin][col] = matriz[lin][col] * k
+            matriz[lin][col] = matriz[lin][col]*k
 
-for lin in range(0,3):
+for lin in range (0,3):
     print(matriz[lin])

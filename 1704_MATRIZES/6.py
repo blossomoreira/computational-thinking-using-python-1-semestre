@@ -7,8 +7,6 @@ a primeira coluna da matriz C é formada pelos elementos da lista A
 somados com mais 5,
 
 
-
-
 a segunda coluna é formada pelo triplo de cada elemento
 correspondente da lista A
 
@@ -17,28 +15,21 @@ e a terceira e última coluna deve ser formada pelos quadrados dos elementos
 correspondentes da lista A. Por fim, mostre os elementos da matriz C.
 '''
 
+
 listaA = []
 matrizC = []
 
-#elementos da lista a + 5
+for i in range(10):
+    listaA.append(int(input("Digite um elemento da lista: ")))
 
-for elementosListaA in range(0,10):
-    elementosA = int(input('10 elementos: '))
-    elementosACol0 = elementosA + 5
-    elementosACol1 = elementosA * 3
-    elementosACol2 = elementosA ** 2
-    listaA.append([elementosACol0, elementosACol1, elementosACol2])
-
-
-print(listaA[0])
-
-
-#criando matriz
-for lin in range (0,10):
+for i in range(10):
     linha = []
-    for col in range (0,3):
-        linha.append(listaA)
-    matrizC.append(listaA)
+    linha.append(listaA[i] + 5)
+    linha.append(listaA[i] * 3)
+    linha.append(listaA[i]**2)
+    matrizC.append(linha)
 
+print(listaA)
 
-print(matrizC[lin])
+for i in range(10):
+    print(matrizC[i])
